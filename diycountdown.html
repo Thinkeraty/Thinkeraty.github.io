@@ -1,0 +1,206 @@
+<html>
+<head>
+<style> 
+body{ 
+
+    text-align: center; 
+
+    background: white; 
+
+  font-family: sans-serif; 
+
+  font-weight: bold;
+  font-size: 76px; 
+} 
+h1{ 
+
+  color: #396; 
+
+  font-weight: bold; 
+
+  font-size: 64px; 
+
+  margin: 40px 0px 20px; 
+} 
+h2{ 
+
+  color: #396; 
+
+  font-weight: bold; 
+
+  font-size: 64px; 
+
+  margin: 40px 0px 20px; 
+} 
+#h1{ 
+
+  color: #396; 
+
+  font-weight: bold; 
+
+  font-size: 64px; 
+
+  margin: 40px 0px 20px; 
+} 
+
+ .month{ 
+
+    font-family: sans-serif; 
+
+    color: #fff; 
+
+    display: inline-block; 
+
+    font-weight: 100; 
+
+    text-align: center; 
+
+    font-size: 62px; 
+} 
+.month > div{ 
+
+    padding: 10px; 
+
+    border-radius: 3px; 
+
+    background: #00BF96; 
+
+    display: inline-block; 
+} 
+.month div > span{ 
+
+    padding: 15px; 
+
+    border-radius: 3px; 
+
+    background: #00816A; 
+
+    display: inline-block; 
+} 
+.timer_value{ 
+
+    padding-top: 5px; 
+
+    font-size: 76px; 
+} 
+font-family: sans-serif; 
+
+    color: #fff; 
+
+    display: inline-block; 
+
+    font-weight: 100; 
+
+    text-align: center; 
+
+    font-size: 62px; 
+} 
+.month > div{ 
+
+    padding: 10px; 
+
+    border-radius: 3px; 
+
+    background: #00BF96; 
+
+    display: inline-block; 
+} 
+.month div > span{ 
+
+    padding: 15px; 
+
+    border-radius: 3px; 
+
+    background: #00816A; 
+
+    display: inline-block; 
+} 
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 55px;
+}
+
+input[type=button] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 55px;
+}
+
+input[type=button]:hover {
+  background-color: #45a049;
+}
+
+
+</style> 
+<script type="text/javascript" src="countdown.js"></script>
+</head>
+<body>
+<h1><u><a id="h1" href="https://Thinkeraty.github.io">Thinkeraty</a></u></h1>
+<h2>Create Your Own Countdown Timer!!</h2>
+ <input type="text" id="month" placeholder="Month (eg: Jan)">
+ <input type="text" id="day" placeholder="Day (eg: 1)">
+ <input type="text" id="year" placeholder="Year (eg: 2020)">
+ <input type="text" id="hour" placeholder="Hours (in 24 hour format)">
+ <input type="text" id="min" placeholder="Minutes">
+ <input type="button" value="Submit" onclick="settimer();">
+ <p id="timer_value"></p>
+
+<script>
+var timer;
+function settimer()
+{
+ clearInterval(timer);
+
+ var timer_month=document.getElementById("month").value;
+ var timer_day=document.getElementById("day").value;
+ var timer_year=document.getElementById("year").value;
+ var timer_hour=document.getElementById("hour").value;
+ if(timer_hour=="")timer_hour=0;
+ var timer_min=document.getElementById("min").value;
+ if(timer_min=="")timer_min=0;
+
+ var timer_date=timer_month+"/"+timer_day+"/"+timer_year+" "+timer_hour+":"+timer_min;
+ var end = new Date(timer_date); // Arrange values in Date Time Format
+ var now = new Date(); // Get Current date time
+ var second = 1000; // Total Millisecond In One Sec
+ var minute = second * 60; // Total Sec In One Min
+ var hour = minute * 60; // Total Min In One Hour
+ var day = hour * 24; // Total Hour In One Day
+
+ function showtimer() {
+  var now = new Date();
+  var remain = end - now; // Get The Difference Between Current and entered date time
+  if(remain < 0) 
+  {
+   clearInterval(timer);
+   document.getElementById("timer_value").innerHTML = 'Reached!';
+   return;
+  }
+  var days = Math.floor(remain / day); // Get Remaining Days
+  var hours = Math.floor((remain % day) / hour); // Get Remaining Hours
+  var minutes = Math.floor((remain % hour) / minute); // Get Remaining Min
+  var seconds = Math.floor((remain % minute) / second); // Get Remaining Sec
+ 
+  document.getElementById("timer_value").innerHTML = days + ' Days ';
+  document.getElementById("timer_value").innerHTML += hours + ' Hrs ';
+  document.getElementById("timer_value").innerHTML += minutes + ' Mins' + ' and ';
+  document.getElementById("timer_value").innerHTML += seconds + ' Secs' + ' left!!';
+ }
+ timer = setInterval(showtimer, 1000); // Display Timer In Every 1 Sec
+}
+</script>
+</head>
+</body>
+</html>
