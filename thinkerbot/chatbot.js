@@ -276,7 +276,7 @@ var ChatBot = function () {
                     "Ask where something is like 'Where is India'?",
                     "Ask about a person like 'Who is Elon Musk'?",
                     "Say a movie/person/location name like 'Sherlock Holmes' to get information about that entity",
-                    "Say a something like 'The Flash characters' to get information about that phrase",
+                    "Say a something like 'Simpsons characters' to get information about that phrase",
                 ];
 
                 return {
