@@ -1,10 +1,10 @@
 const video = document.getElementById('video')
 
 Promise.all([
-  faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
-  faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
-  faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
-  faceapi.nets.faceExpressionNet.loadFromUri('/models')
+  faceapi.nets.tinyFaceDetector.loadFromUri('https://thinkeraty.github.io/thinkerfeel/models'),
+  faceapi.nets.faceLandmark68Net.loadFromUri('https://thinkeraty.github.io/thinkerfeel/models'),
+  faceapi.nets.faceRecognitionNet.loadFromUri('https://thinkeraty.github.io/thinkerfeel/models'),
+  faceapi.nets.faceExpressionNet.loadFromUri('https://thinkeraty.github.io/thinkerfeel/models')
 ]).then(startVideo)
 
 function startVideo() {
