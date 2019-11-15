@@ -1,0 +1,415 @@
+
+@import
+url(http://fonts.googleapis.com/css?family=Monsterrat:400, 700);
+body{
+color:#555;
+margin: 0;
+}
+#header{
+background-color: #1abc9c;
+height: 150px;
+line-height:150px;
+}
+#post-date3 {
+color: black;}
+#header a{
+color: white;
+text-decoration: none;
+
+text-transform: uppercase;
+letter-spacing: 0.1em;
+}
+#header a:hover{
+color: 222;
+}
+#header-title{
+display: block;
+float: left;
+position: absolute;
+top: 6px;
+left: 340px;
+right: 100px;
+font-size: 50px;
+font-weight: bold;
+} 
+#header-title2{
+display: block;
+float: left;
+position: absolute;
+top: 10px;
+left: 300px;
+right: 100px;
+font-size: 50px;
+font-weight: bold;
+} 
+#header-title3{
+display: block;
+float: left;
+position: absolute;
+top: 10px;
+left: 375px;
+right: 100px;
+font-size: 50px;
+font-weight: bold;
+} 
+#header-nav{
+display: block;
+position: absolute;
+top: 10px;
+right: 10px;
+float: right;
+margin-top: 0;
+font-weight: bold;
+}
+#header-nav li{
+display: inline;
+padding-left: 20px;
+}
+.container{
+max-width: 1000px;
+margin: 0 auto;
+}
+#footer {
+background-color: #2f2f2f;
+padding: 50px 0;
+}
+.column {
+min-width: 300px;
+display: inline-block;
+vertical-align: top;
+}
+#footer h4{
+color: white;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+}
+#footer p{
+color: white;
+}
+a{
+color: #1abc9c;
+text-decoration: none;
+}
+a:hover{
+color: #f6a623;
+}
+#footer-nav{
+display: block;
+float: right;
+}
+.post{
+max-width: 800px;
+margin: 0 auto;
+padding: 60px 0;
+}
+.post-author3 img,
+.about-author img
+.post-author img
+{
+border-radius: 10%;
+}
+.post-author3 img{
+height: 425px;
+width: 340px;}
+.post-author2 img{
+float: left;
+position: absolute;
+top: 1820px;
+Left: 0px;
+right: 0px;
+height: 350px;
+width: 980px;
+}
+.post-author4 img{
+float: left;
+position: absolute;
+top: 1670px;
+Left: 0px;
+right: 0px;
+height: 350px;
+width: 980px;
+}
+.post-author9 img{
+float: left;
+position: absolute;
+top: 280px;
+Left: 0px;
+right: 0px;
+height: 390px;
+width: 980px;
+}
+.post-author10 img{
+float: left;
+position: absolute;
+top: 820px;
+Left: 0px;
+right: 0px;
+height: 350px;
+width: 980px;
+}
+.post-date10 {
+color: #000000;
+position: absolute;
+top: 70px;
+left: 10px;
+font-size: 35px;
+font-weight: bold;
+
+text-transform: uppercase;
+letter-spacing: 0.1em;
+}
+.post-date13 {
+color: #000000;
+position: absolute;
+top: 180px;
+left: 10px;
+font-size: 35px;
+font-weight: bold;
+
+text-transform: uppercase;
+letter-spacing: 0.1em;
+}
+.post-date11 {
+color: #000000;
+position: absolute;
+top: 1140px;
+left: 0px;
+font-size: 35px;
+font-weight: bold;
+
+text-transform: uppercase;
+letter-spacing: 0.1em;
+}
+.post-date12 {
+color: #000000;
+position: absolute;
+top: 650px;
+left: 0px;
+font-size: 35px;
+font-weight: bold;
+
+text-transform: uppercase;
+letter-spacing: 0.1em;
+}
+.post-author8 img{
+float: left;
+position: absolute;
+top: 1320px;
+Left: 0px;
+right: 0px;
+height: 350px;
+width: 980px;
+}
+.post-date9 {
+color: #000000;
+position: absolute;
+top: 500px;
+left: 10px;
+font-size: 35px;
+font-weight: bold;
+
+text-transform: uppercase;
+letter-spacing: 0.1em;
+}
+.post-date7 {
+color: #000000;
+position: absolute;
+top: 1220px;
+left: 10px;
+font-size: 35px;
+font-weight: bold;
+
+text-transform: uppercase;
+letter-spacing: 0.1em;
+}
+.mimo3 img{
+height: 400px;
+width: 650px;}
+.about{
+text-align:centre;
+}
+.Contact{
+text-align:centre;
+}
+.post-author span{
+margin-left: 16px;
+}
+.post-date {
+color: #D2D2D2;
+
+font-size: 14px;
+font-weight: bold;
+
+text-transform: uppercase;
+letter-spacing: 0.1em
+}
+.post, .about{
+max-width: 800px;
+margin: 0 auto;
+padding: 60px 0;
+}
+.mimo img{
+height: 400px;
+width: 650px;}
+.mimo2 img{
+height: 1258px;
+width: 700px;}
+
+.post-date2 {
+color: #000000;
+position: absolute;
+top: 1070px;
+left: 10px;
+font-size: 35px;
+font-weight: bold;
+
+text-transform: uppercase;
+letter-spacing: 0.1em;
+}
+.post-date3{
+color: black;
+position: absolute;
+top: 2140px;
+left: 0px;
+font-size: 35px;
+font-weight: bold;
+white-space: nowrap;
+  overflow: hidden;
+
+text-transform: uppercase;
+letter-spacing: 0.1em
+}
+.post-date4{
+color: black;
+position: absolute;
+top: 2650px;
+left: 10px;
+font-size: 35px;
+font-weight: bold;
+white-space: nowrap;
+  overflow: hidden;
+
+text-transform: uppercase;
+letter-spacing: 0.1em
+}
+.post-date6 {
+color: #000000;
+position: absolute;
+top: 2230px;
+left: 10px;
+font-size: 35px;
+font-weight: bold;
+
+text-transform: uppercase;
+letter-spacing: 0.1em;
+}
+h1, H2, h3, h4{
+color: #333;
+}
+p{
+line-height: 1.5;
+}
+body{
+margin: 0;
+color: #555;
+
+font-family: 'Monsterrat', sans-serif;
+}
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+.about {
+text-align: center;
+max-width: 1000px;
+margin: 0 auto;
+}
+menu {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+#footer {
+background-color: #2f2f2f;
+padding: 50px 0;
+}
+.column {
+min-width: 300px;
+display: inline-block;
+vertical-align: top;
+}
+#footer h4{
+color: white;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+}
+#footer p{
+color: white;
+}
+a{
+color: #1abc9c;
+text-decoration: none;
+}
+a:hover{
+color: #f6a623;
+}
+#footer-nav{
+display: block;
+float: right;
+}
+.post{
+max-width: 800px;
+margin: 0 auto;
+padding: 60px 0;
+}
+.post-container:nth-child (even){background-color: #f2f2f2;}
+.post-author img,
+.about-author img
+{
+border-radius: 10%;
+}
+
