@@ -30,6 +30,8 @@ header p {
   background: lightblue;
   width: 100%;
   display: flex;
+  position: absolute;
+  bottom: 40%;
 }
 .pads > div {
   height: 50px;
