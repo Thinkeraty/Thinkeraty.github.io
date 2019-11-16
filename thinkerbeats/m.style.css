@@ -36,7 +36,7 @@ header p {
   width: 100px;
   flex: 1;
   position: absolute;
-  bottom: 20%;
+  bottom: 0%;
 }
 .pad1 {
   background: #60d394;
@@ -59,7 +59,7 @@ header p {
 
 .visual > div {
   position: absolute;
-  bottom: 20%;
+  bottom: 0%;
   height: 50px;
   width: 50px;
   border-radius: 50%;
