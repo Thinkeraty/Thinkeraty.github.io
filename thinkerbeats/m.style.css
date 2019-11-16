@@ -1,4 +1,5 @@
 /*Coded By Samyak Jain. Published By Thinkeraty.*/
+
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +19,7 @@ body {
 }
 
 header h1 {
-  margin: -5px -10px 30px 0px;
+  margin: 0px -10px 30px 0px;
   text-align: center;
   font-size: 40px;
 }
@@ -34,7 +35,7 @@ header p {
   bottom: 30px;
 }
 .pads > div {
-  height: 50px;
+  height: 100px;
   width: 100px;
   flex: 1;
 }
