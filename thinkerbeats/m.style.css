@@ -37,6 +37,8 @@ header p {
   height: 50px;
   width: 100px;
   flex: 1;
+  position: absolute;
+  bottom: 40%;
 }
 .pad1 {
   background: #60d394;
