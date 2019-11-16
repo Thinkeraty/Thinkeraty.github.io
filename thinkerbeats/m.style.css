@@ -32,7 +32,7 @@ header p {
   width: 100%;
   display: flex;
   position: absolute;
-  bottom: -100px;
+  bottom: -80px;
 }
 .pads > div {
   height: 130px;
