@@ -57,7 +57,7 @@ header p {
 
 .visual > div {
   position: absolute;
-  bottom: 0%;
+  bottom: 20%;
   height: 50px;
   width: 50px;
   border-radius: 50%;
