@@ -1,57 +1,64 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,100,400');
 
 body {
-    font-family: 'Ralwway', sans-serif;
-    height: 100vh;
-    background: #333;
-    color: #ccc;
-    overflow: hidden; 
+  font-family: 'Raleway', sans-serif;
+  height: 100vh;
+  background: #fff;
+  color: #ccc;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1%;
+  padding: 0 3rem;
 }
 
+
+
 h1, h2 {
-    font-weight: 500;
-    margin: 0.4rem;
+  font-weight: 200;
+  margin: 0.4rem;
 }
 
 h1 {
-    font-size: 55px;
+  font-size: 3.5rem;
+  color: orangered;
 }
 
 h2 {
-    font-size: 2rem;
-    color: #aaa;
-}   
+  font-size: 2rem;
+  color: #aaa;
+}
+
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid orangered;
+}
 
 @media(min-width: 1200px) {
-    h1 {
-        font-size: 50px;
-    }
+  h1 {
+    font-size: 5rem;
+  }
 }
 
 @media(max-width: 800px) {
-    .container {
-        padding: 0 1rem;
-    }
+  .container {
+    padding: 0 1rem;
+  }
 
-    h1 {
-        font-size: 40px;
-    }
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 @media(max-width: 500px) {
-    h1 {
-        font-size: 30px;
-    }
+  h1 {
+    font-size: 2.5rem;
+  }
 
-    h2 {
-        font-size: 20px;
-    }
+  h2 {
+    font-size: 1.5rem;
+  }
 }

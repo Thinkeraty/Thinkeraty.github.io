@@ -1,133 +1,163 @@
-<!Doctype html>
+
+<!DOCTYPE html>
 <html>
-<head>
-<style>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hi</title>
+        <div class="container">
+        <div class="header">
+          <h1 align="center" style="color: white;">About Us</h1>
+            </div>
+        </div>
+        <div class="nav">
+          
+                <a href="index.html" style="color: white; text-decoration: none">Home</a> &nbsp;
+           
+                <a href="service.html" style="color: white; text-decoration: none">Services</a> &nbsp;
+            
+                <a href="about.html" style="color: white; text-decoration: none">About Us</a> &nbsp;
+            
+                <a href="contact.html" style="color: white; text-decoration: none">Contact Us</a> &nbsp;
+            
+        </div>
+        <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway:200,100,400');
+        
+
 body {
-  font-family: "Lato", sans-serif;
-  transition: background-color .5s;
+  font-family: 'Raleway', sans-serif;
+  height: 100vh;
+  background: #fff;
+  color: #ccc;  
 }
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 78px 78px 78px 32px;
+.nav {
+  margin-left: 60%;
+  margin-top: -9%;
+  text-align: left;
+  color: white;
+  font-size: 25px;
   text-decoration: none;
-  font-size: 48px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1%;
+  padding: 0 3rem;
 }
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  left: 100px;
-  font-size: 50px;
-  margin-left: 50px;
+.header {
+  width: 200%;
+  margin-left: -85%;
+  margin-top: -2%;
+  text-align: left;
+  height: 150px;
+  background-color: orangered;
+  padding-top: 50px;
+  color: white;
 }
 
-#main {
-  transition: margin-left .5s;
-  padding: 1px;
-position: absolute;
-top:50px;
-left:10px;
-display: block;
-font-weight: bold;
+
+h1, h2 {
+  font-weight: 200;
+  margin: 0.4rem;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 28px;}
-</style>
-<title>About</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-<div id="header">
-<div class="container">
-<a id="header-title3" href="about.html">About</a>
-<UL id="header-nav">
-<UL>
-<li>
-<a href="Contact.html">Contact</a></li>
-</ul>
-</div>
-</div>
-<div id="content">
-<div class="container">
-<div class="post">
-<div class="post-author">
-<img SRC="Samyak.png">
-</div>
-
-<h1 class="post-title">Samyak Jain</H1>
-<div class="post-content">
-<p>
-Hi there! I am an aspiring web developer.</p>
-<p>
-If you like my blog, please follow me on <a href="https://instagram.com/var_samyak/">Instagram</a> and <a href="https://www.facebook.com/profile.php?id=100009166709376">Facebook</a>.<br> Please tell your friends and family about it.<br>
-If you want to get in touch, discuss a matter or review a product, please click on the contact menu in the navigation bar. If you wish to write as a Guest Blogger,<br> please send me your name, your thoughts and a picture of yourself <a href="mailto:contact.thinkeraty@gmail.com">here</a>.<br> It will published on <a href="index.html">My Blog</a> within 2 days. Thank You!!</p>
-</div>
-</div>
-<div id="footer">
-<div class="container">
-<div class="column">
-<H4>My Links</H4>
-<p>
-<a href="https://instagram.com/var_samyak/">Instagram</a>
-<br>
-<a href="https://www.facebook.com/profile.php?id=100009166709376">Facebook</a>
-</p>
-</div>
-<div class="column">
-<H4>Contact Me!
-<p>Feel free to contact me. To do it, press that contact link.👆</p>
-</div>
-</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
- <a href="index.html">Home</a>
-  <a href="About.html">About</a>
-<a href="Client.html">Clients</a>
-  <a href="Contact.html">Contact</a>
-<a href="https://thinkeraty.000webhostapp.com">Subscribe</a>
-<a href="https://thinkeraty.github.io/diycountdown.html">Countdown</a>
-<a href="https://thinkerchat.github.io/">Thinkerchat</a></div><div id="main">
-  <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-</div>
-
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "300px";
-  document.getElementById("main").style.marginLeft = "300px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+h1 {
+  font-size: 3.5rem;
+  color: orangered;
 }
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-  document.body.style.backgroundColor = "white";
+h2 {
+  font-size: 2rem;
+  color: #aaa;
 }
-</script>
+
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid orangered;
+}
+
+@media(min-width: 1200px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+@media(max-width: 800px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media(max-width: 500px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+        </style>
+    </head>
+    <body>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+                <h1 align="left" style="margin-left: 2%;">
+                <span class="txt-type" data-wait="3000" data-words='["Creating A New Web.", "Innovating Constantly.", "Implementing Ideas."]'></span>
+            </h1>
+            </div>
+            </h1>
+        </div>
+        <p style="margin-left: 2%; color: rgb(97, 93, 93); font-size: 30px;">
+          Thinkeraty Labs is a web development firm.<br>
+          It was founded by Samyak Jain in 2019. He was 13 years old at the time.<br>
+          <br>
+          We are always striving to create new web technologies.<br>
+          <br>
+          <video height="240px" width="240px" loop autoplay muted>
+            <source src="thinkeraty.mp4" alt="thinkeraty_video" type="video/mp4">
+          </video>
+          <br>
+          We have created a number of tools that are helping people and <br>we are always thinking of new ones.<br>
+        <br>
+        Our creativity and determination has helped us <br>complete every project that we have put our mind to.<br>
+        <br>
+        With our underlying philosophy and hard work, every website made by us is beautiful and bold.<br>
+        <br>
+        </p>
+        <h1 align="left" style="margin-left: 2%;">Our History</h1>
+        <p style="margin-left: 2%; color: rgb(97, 93, 93); font-size: 30px;">
+        When Samyak Jain first learnt about H.T.M.L in his school's computer lab,<br>
+        he was amazed. <br>
+        <br>He dashed home, fired up his laptop and created his first website.<br> 
+        <br>
+        That day, he started coding. He hasn't stopped since.<br>
+        <br>
+        After a few months, he launched Thinkeraty as a personal blog.<br>
+        <br>
+        It wasn't that succesful, but he continued.<br>
+        <br>
+        He later closed the blog and started this company called<br>
+        Thinkeraty Labs.<br>
+        <br>
+      </p>
+
+        <script src="main.js"></script>
+    </body>
+</html>
