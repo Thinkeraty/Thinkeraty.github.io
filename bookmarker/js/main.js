@@ -115,4 +115,3 @@ function addhttp(url) {
   }
   return url;
 }
-curl http://www.tutorialspoint.com
