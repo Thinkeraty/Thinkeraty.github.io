@@ -4077,6 +4077,7 @@ function checkStatus() {
   if (!isPlaying && time === 0) {
     message.innerHTML = 'Game Over!!!';
     score = -1;
+    currentLevel = 5;
   }
 }
 
