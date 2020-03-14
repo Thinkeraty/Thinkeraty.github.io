@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Thinkeraty Labs</title>
+        <link rel='stylesheet' href='https://unpkg.com/aos@next/dist/aos.css'>
         <div class="container">
         <div class="header">
           <h1 align="center" style="color: white;">Our Services</h1>
@@ -256,7 +257,7 @@
             float: right;
             font-size: 30px;
             color: rgb(97, 93, 93);
-            margin-top: -20%;
+            margin-top: -10%;
 			
         }
         
@@ -363,6 +364,7 @@
           Therefore, are you ready to get a website?<br>
           <br>
           <br>
+          <section class="website" data-aos="fade-up"></section>
           <img src="website.png" height="220px" width="320px" class="website" alt="website">
           <br>
           <br>
@@ -376,6 +378,7 @@
             We make websites that are subtle and yet bold,<br>that are silent but pop out.<br>
             <br>
            </div>
+          </section>
            <br>
            <br>
            <br>
@@ -388,22 +391,24 @@
            <br>
            <br>
            <br>
+           <section class="debugging" data-aos="fade-up">
            <img src="debug.jpg" height="220px" width="320px" class="debug" alt="debug">
            <br>
            <br>
            <div class="debug-text">
-             <br>
                We here at Thinkeraty Labs are very considerate <br>for programmers.<br>
                They are the reason the <br>internet is here in the first place!.<br>
                That is why, we are offering to debug all<br> your code!<br>
                <br>
            </div>
+          </section>
            <br>
            <br>
            <br>
            <br>
            <br>
            <br>
+           <section class="coding-text" data-aos="fade-up">
            <img src="coding.jpg" height="220px" width="320px" class="coding" alt="coding">
            <br>
            <br>
@@ -416,10 +421,27 @@
             <br>
             <br>
         </div>
+      </section>
           </p>
           <br>
           <br>
           <br>
         <br>
+        <script src='https://unpkg.com/aos@next/dist/aos.js'></script> 
+        <script>
+          AOS.init({
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 10, // values from 0 to 3000, with step 50ms
+        duration: 1000 // values from 0 to 3000, with step 50ms
+      });
+
+      if(window.innerWidth < 400) {
+        AOS.init({
+        offset: 390, // offset (in px) from the original trigger point
+        delay: 10, // values from 0 to 3000, with step 50ms
+        duration: 1000 // values from 0 to 3000, with step 50ms
+      });
+      }
+        </script>
     </body>
 </html>
