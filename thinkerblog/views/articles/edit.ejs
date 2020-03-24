@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>ThinkerBlog</title>
-  <h1 align="center" class="header">ThinkerBlog</h1>
+  <h1 align="center" class="header"><a href="/articles/edit" class="page-heading" style="color: #000000; text-decoration: none;">ThinkerBlog</a></h1>
   <br>
   <br>
   <br>
@@ -14,9 +14,36 @@
   <br>
 </head>
 <style>
-  .header{
-    text-decoration: underline;
-    text-decoration-color: #1abc9c;
+.page-heading {
+text-decoration:none;
+display: inline-block;
+color:black;
+}
+/* add a empty string after the elment with class .page-heading */
+.page-heading:after 
+{
+color:black;
+content: '';
+display: block;
+height: 5px;
+width: 0;
+background: transparent;
+transition: width .5s ease, background-color .5s ease; /* .5 seonds for changes to the width and background-color */
+-webkit-transition: width .5s ease, background-color .5s ease; /* Chrome and Safari */
+-moz-transition: width .5s ease, background-color .5s ease; /* FireFox */
+}
+/* Change the width and background on hover, aka sliding out */
+.page-heading:hover:after 
+{
+color:black;
+width: 100%;
+background: #1abc9c;
+}
+
+  .page-heading:hover:before {
+    color:black;
+    visibility: visible;
+    width: 100%;
   }
 </style>
 <body>
