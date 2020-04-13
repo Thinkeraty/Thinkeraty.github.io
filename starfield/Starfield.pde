@@ -43,7 +43,7 @@ class Star {
   }
   
   void update() {
-    z-=10;        // Move star closer to viewport
+    z-= 25;        // Move star closer to viewport
     if (z <= 0.0) // Reset star if it passes viewport
       reset();
   }
